@@ -9,7 +9,7 @@ spec:
       containers:
       - name: kube-bench
         # Push the image to your ECR and then refer to it here
-        image: <ID.dkr.ecr.region.amazonaws.com/aquasec/kube-bench:ref>
+        image: <ID.dkr.ecr.region.amazonaws.com/stuartw1/kube-bench:ref>
         command: ["kube-bench", "--version", "1.11"]
         volumeMounts:
         - name: var-lib-kubelet

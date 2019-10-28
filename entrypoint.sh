@@ -10,8 +10,8 @@ if [ "$1" == "install" ]; then
     echo "==============================================="
   else
     echo "Usage:"
-    echo "  install: docker run --rm -v \`pwd\`:/host aquasec/kube-bench install"
-    echo "  run:     docker run --rm --pid=host aquasec/kube-bench [command]"
+    echo "  install: docker run --rm -v \`pwd\`:/host stuartw1/kube-bench install"
+    echo "  run:     docker run --rm --pid=host stuartw1/kube-bench [command]"
     exit
   fi
 else
