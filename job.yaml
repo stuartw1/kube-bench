@@ -2,6 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: kube-bench
+  namespace: kube-bench
 spec:
   template:
     metadata:
@@ -11,7 +12,7 @@ spec:
       hostPID: true
       containers:
       - name: kube-bench
-        image: stuartw1/kube-bench:latest
+        image: stuartw1/kube-bench:v1.13
         resources:
           limits:
             memory: "1Gi"
