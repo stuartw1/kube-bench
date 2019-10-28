@@ -1,4 +1,4 @@
-module github.com/aquasecurity/kube-bench
+module github.com/stuartw1/kube-bench
 
 go 1.12
 
