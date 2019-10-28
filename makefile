@@ -23,7 +23,7 @@ KIND_CONTAINER_NAME=$(KIND_PROFILE)-control-plane
 build: kube-bench
 
 $(BINARY): $(SOURCES)
-	GOOS=$(TARGET_OS) go build -ldflags "-X github.com/aquasecurity/kube-bench/cmd.KubeBenchVersion=$(KUBEBENCH_VERSION)" -o $(BINARY) .
+	GOOS=$(TARGET_OS) go build -ldflags "-X github.com/stuartw1/kube-bench/cmd.KubeBenchVersion=$(KUBEBENCH_VERSION)" -o $(BINARY) .
 
 # builds the current dev docker version
 build-docker:
