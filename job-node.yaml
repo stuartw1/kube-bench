@@ -9,6 +9,9 @@ spec:
       containers:
       - name: kube-bench
         image: stuartw1/kube-bench:latest
+        resources:
+          limits:
+            memory: "1Gi"
         command: ["kube-bench","node"]
         volumeMounts:
         - name: var-lib-kubelet
