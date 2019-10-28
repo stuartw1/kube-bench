@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/aquasecurity/kube-bench/check"
+	"github.com/stuartw1/kube-bench/check"
 	"github.com/fatih/color"
 	"github.com/golang/glog"
 	"github.com/spf13/viper"

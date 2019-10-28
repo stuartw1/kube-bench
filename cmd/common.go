@@ -22,7 +22,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/aquasecurity/kube-bench/check"
+	"github.com/stuartw1/kube-bench/check"
 	"github.com/golang/glog"
 	"github.com/spf13/viper"
 )

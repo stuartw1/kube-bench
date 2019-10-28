@@ -15,7 +15,7 @@
 package cmd
 
 import (
-	"github.com/aquasecurity/kube-bench/check"
+	"github.com/stuartw1/kube-bench/check"
 	"github.com/spf13/cobra"
 )
 

@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/aquasecurity/kube-bench/check"
+	"github.com/stuartw1/kube-bench/check"
 	"github.com/golang/glog"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"

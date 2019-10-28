@@ -16,7 +16,7 @@ package cmd
 
 import (
 	"errors"
-	"github.com/aquasecurity/kube-bench/check"
+	"github.com/stuartw1/kube-bench/check"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 	"testing"
