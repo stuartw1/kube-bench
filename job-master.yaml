@@ -14,20 +14,20 @@ spec:
         effect: NoSchedule
       containers:
       - name: kube-bench
-        image: stuartw1/kube-bench:latest
+        image: stuartw1/kube-bench:CoreOS2
         resources:
           limits:
             memory: "1Gi"
-        command: ["kube-bench","master"]
+        command: ["kube-bench","master","--version","1.15"]
         volumeMounts:
         - name: var-lib-etcd
           mountPath: /var/lib/etcd
         - name: etc-kubernetes
-          mountPath: /etc/kubernetes
+          mountPath: /var/lib/kubernetes
           # /usr/bin is mounted to access kubectl / kubelet, for auto-detecting the Kubernetes version. 
           # You can omit this mount if you specify --version as part of the command.
         - name: usr-bin
-          mountPath: /usr/bin
+          mountPath: /opt/bin
       restartPolicy: Never
       volumes:
       - name: var-lib-etcd
@@ -35,7 +35,7 @@ spec:
           path: "/var/lib/etcd"
       - name: etc-kubernetes
         hostPath:
-          path: "/etc/kubernetes"
+          path: "/var/lib/kubernetes"
       - name: usr-bin
         hostPath:
-          path: "/usr/bin"
+          path: "/opt/bin"
